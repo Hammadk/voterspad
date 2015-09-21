@@ -1,0 +1,3 @@
+#!/bin/bash
+set -ex
+bundle exec foreman start -c all=1,delayedjob_webhook=0
