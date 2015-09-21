@@ -9,7 +9,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'puma'
 gem 'newrelic_rpm'
-
+gem 'dalli'
 gem 'pg'
 
 gem 'jquery-rails'
