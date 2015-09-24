@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'locations/index'
-
+  root 'locations#index'
   get 'locations/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
