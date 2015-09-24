@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'puma'
 gem 'newrelic_rpm'
+gem "rack-timeout"
 gem 'dalli'
 gem 'pg'
 
