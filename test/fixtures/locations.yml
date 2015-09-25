@@ -1,9 +1,7 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+canada:
+  name: Canada
+  year: 2015
 
-one:
-  name: MyString
-  year: 1
-
-two:
-  name: MyString
-  year: 1
+toronto:
+  name: Toronto
+  year: 2015
