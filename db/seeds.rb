@@ -1,5 +1,6 @@
 location_list = [
   [ "Canada", 2015],
+  [ "Toronto", 2015],
 ]
 
 location_list.each do |name, year|
