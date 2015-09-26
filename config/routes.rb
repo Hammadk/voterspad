@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'elections#index'
-  resources :elections
+  resources :elections, only: [:index, :new, :create]
+  resources :elections, path: "", except: [:index, :new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
