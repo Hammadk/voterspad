@@ -11,15 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150926174238) do
+ActiveRecord::Schema.define(version: 20150926184844) do
 
   create_table "elections", force: :cascade do |t|
     t.string   "name"
     t.integer  "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "slug"
   end
 
   add_index "elections", ["name", "year"], name: "index_elections_on_name_and_year", unique: true
+  add_index "elections", ["slug"], name: "index_elections_on_slug", unique: true
 
 end
