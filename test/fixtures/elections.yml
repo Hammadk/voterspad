@@ -1,7 +1,9 @@
 canada:
   name: Canada
   year: 2015
+  slug: canada-2015
 
 toronto:
   name: Toronto
   year: 2015
+  slug: toronto-2015
