@@ -1,4 +1,4 @@
-class Location < ActiveRecord::Base
+class Election < ActiveRecord::Base
   validates :name, presence: true
   validates :year, presence: true
 

@@ -1,14 +1,13 @@
 require 'test_helper'
 
-class LocationsControllerTest < ActionController::TestCase
+class ElectionsControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
   end
 
   test "should get show" do
-    get :show
+    get :show, id: 1
     assert_response :success
   end
-
 end
