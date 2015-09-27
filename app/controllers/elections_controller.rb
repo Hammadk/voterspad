@@ -1,4 +1,5 @@
 class ElectionsController < ApplicationController
+  before_action :set_election, only: [:show]
   def index
   end
 
@@ -7,8 +8,7 @@ class ElectionsController < ApplicationController
 
   private
 
-  def election
+  def set_election
     @election = Election.find_by!(slug: params[:id])
   end
-  helper_method :election
 end

@@ -16,7 +16,7 @@ class ElectionsControllerTest < ActionController::TestCase
   end
 
   test "#show is not successful when election does not exist" do
-    assert_raise ActionView::Template::Error do
+    assert_raise ActiveRecord::RecordNotFound do
       get :show, id: "does not exist"
     end
   end
