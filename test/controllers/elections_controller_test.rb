@@ -25,9 +25,4 @@ class ElectionsControllerTest < ActionController::TestCase
     get :show, id: election.slug
     assert_equal election.slug, assigns(:election).slug
   end
-
-  test "#show assigns @questions" do
-    get :show, id: election.slug
-    assert_equal election.questions, assigns(:questions)
-  end
 end

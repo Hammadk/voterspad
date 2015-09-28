@@ -5,6 +5,7 @@ class ElectionsController < ApplicationController
 
   def show
     @questions = @election.questions
+    @candidates = @election.candidates
   end
 
   private

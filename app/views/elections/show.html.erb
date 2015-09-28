@@ -10,8 +10,9 @@
   <thead>
     <tr>
       <th>Questions</th>
-      <th>Candidate 1</th>
-      <th>Candidate 2</th>
+      <% @candidates.each do |candidate| %>
+        <th><%= candidate.name %></th>
+      <% end %>
     </tr>
   </thead>
   <tbody>
