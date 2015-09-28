@@ -4,7 +4,7 @@ class ElectionsController < ApplicationController
   end
 
   def show
-    @questions = @election.questions
+    @questions = @election.questions.includes(:answers)
     @candidates = @election.candidates
   end
 

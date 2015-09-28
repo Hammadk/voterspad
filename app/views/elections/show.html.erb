@@ -19,6 +19,9 @@
     <% @questions.each do |question| %>
       <tr>
         <td><%= question.content %></td>
+        <% @candidates.each do |candidate| %>
+          <td><%= candidates_response_to_question(question, candidate) %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
