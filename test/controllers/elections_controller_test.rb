@@ -20,4 +20,14 @@ class ElectionsControllerTest < ActionController::TestCase
       get :show, id: "does not exist"
     end
   end
+
+  test "#show assigns @election" do
+    get :show, id: election.slug
+    assert_equal election.slug, assigns(:election).slug
+  end
+
+  test "#show assigns @questions" do
+    get :show, id: election.slug
+    assert_equal election.questions, assigns(:questions)
+  end
 end
