@@ -23,8 +23,12 @@ election_list.each do |name, year|
     election.candidates << candidate
   end
 
-  sample_questions.each do |question|
-    Question.where(content: question, election_id: election.id).first_or_create!
+  sample_questions.each do |sample_question|
+    question = Question.where(content: sample_question, election_id: election.id).first_or_create!
+
+    election.candidates.each do |candidate|
+      Answer.where(candidate_id: candidate.id, question_id: question.id, content: "#{candidate.name}'s reponse for #{question.id}").first_or_create!
+    end
   end
 end
 
