@@ -9,7 +9,9 @@
   >
   <thead>
     <tr>
-      <th>Questions</th>
+      <th data-sortable="true" data-switchable="false">
+        Questions
+      </th>
       <% @candidates.each do |candidate| %>
         <th><%= candidate.name %></th>
       <% end %>
