@@ -6,6 +6,8 @@ class Election < ActiveRecord::Base
   before_validation :generate_slug
 
   has_many :questions
+  has_many :election_candidates
+  has_many :candidates, through: :election_candidates
 
   def to_param
     slug
